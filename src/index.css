@@ -16,3 +16,6 @@ code {
   font-size: 45px;
   color: crimson;
 }
+.list-group-item {
+  padding-bottom: 17px;
+}
