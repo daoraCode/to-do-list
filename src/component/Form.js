@@ -1,8 +1,8 @@
-import React from "react";
+import { Component } from 'react';
 
-class Form extends React.Component {
+class Form extends Component {
+    
     // initializer
-
     constructor() {
         super() // to get props
 
@@ -53,4 +53,5 @@ class Form extends React.Component {
         )
     }
 }
+
 export default Form;

@@ -1,7 +1,6 @@
-import React from "react";
+import { Component } from 'react';
 
-
-class List extends React.Component {
+class List extends Component {
 
     constructor() {
         super()
@@ -10,7 +9,7 @@ class List extends React.Component {
 
     render() {
 
-        const { tasks, deleteTask } = this.props;
+        const { tasks, deleteTask, editTask } = this.props;
 
         return (
             <>
@@ -23,9 +22,9 @@ class List extends React.Component {
                             <div>
                                 <p>Statut : {task.status}</p>
                             </div>
-                            {/* <div>
-                                <button onClick={() => deleteTask(index)} className="btn btn-danger">Supprimer</button>
-                            </div> */}
+                            <div>
+                                <button onClick={() => editTask(index)} className="btn btn-primary">Éditer</button>
+                            </div>
                             <div>
                                 <button onClick={() => deleteTask(index)} className="btn btn-danger">Supprimer</button>
                             </div>
